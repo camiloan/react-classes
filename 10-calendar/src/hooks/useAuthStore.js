@@ -11,7 +11,6 @@ import {
 export const useAuthStore = () => {
   const { status, user, errorMessage } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
-
   const startLogin = async ({ email, password }) => {
     dispatch(onChecking());
     try {
